@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Rajdhani&family=Roboto:wght@300&display=swap');
+
+:root {
+    --widthPage: 1920px;
+    --colorSection: rgba(41, 41, 51, 0.9);
+}
+* {
+    padding: 0;
+}
+body {
+    height: 100%;
+    color:aliceblue;
+    background-image: url(./img/trig.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#wrapper{
+    width: var(--widthPage);
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Bruno Ace', cursive;
+}
+
+header{
+    height: 150px;
+    background-color: var(--colorSection);
+    border-radius: 15px;
+    text-align: center;
+}
+.imgCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.space {
+    width: 50px;
+}
+/*-----------------------------------*/
+.menuBar {
+    background-color: var(--colorSection);
+    border-radius: 15px;
+}
+.menuBar nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.menuBar nav ul li{
+    float: left;
+}
+.menuBar nav ul li a{
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 1s;
+}
+.menuBar nav ul li a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+/*-----------------------------------*/
+section{
+    width: var(--widthPage);
+    height: 900px;
+    background: var(--colorSection);
+    border-radius: 15px;
+    position: relative;
+}
+.title {
+    font-size: 30px;
+}
+.text {
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+}
+.left {
+    float: left;
+    width: 600px;
+    margin-left: 15px;
+}
+.editors {
+    float: right;
+    margin-right: 25px;
+}
+.vsc {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-decoration-thickness: 3px;
+}
+.vsc .vscp {
+    width: 500px;
+    border-radius: 10px;
+}
+.vst {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-decoration-thickness: 3px;
+}
+.vst .vstp {
+    width: 500px;
+    border-radius: 10px;
+}
+
+footer{
+    border-radius: 15px;
+    background-color: var(--colorSection);
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+.cpr {
+    padding-left: 10px;
+    float: left;
+}
+.gif {
+    padding-left: 10px;
+    float: right;
+    margin-left: 800px;
+}
+.gif img {
+    border-radius: 10px;
+}
