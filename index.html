@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FLINT Development</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="fixedHeaderNav">
+      <header>
+        <button id="theme-toggle" class="theme-button">🌙</button>
+        <h1>Willkommen bei FLINT Development</h1>
+      </header>
+    
+      <nav>
+        <a href="index.html">Start</a>
+        <a href="produkte.html">Projekte</a>
+        <a href="produkte.html">Shop</a>
+        <a href="support.html">Support</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="account.html">Account</a>
+        <input class="searchSiteAllong" placeholder="Search..."></input>
+      </nav>
+    </div>
+
+    <div class="welcome-content">
+      <h2>Willkommen auf meiner Website</h2>
+      <p>Hier zeige ich meine Projekte und stelle auch die dazugehörigen unterlagen zur verfügung. Von Elektrotechnik, 3D-Modellen, Programierung bis hin zu Autos und Mechanik. 
+        Bei mir gibts alles das was man brauch. Falls ich doch nicht das haben sollte was benötigt wird könnt ihr mich über die Konntaktseite einfach erreichen!
+      </p>
+      <p>
+        Meine Website befindet sich noch im aufbau, also falls fehler gefunden werden oder verbesserungsvorschläge vorhanden sind könnt ihr euch gerne Melden.
+      </p>
+      <a href="#" class="button">Mehr erfahren</a>
+    </div>
+
+    <section class="feature">
+      <img src="./pic/Elektronik.jpg" alt="Demo Bild 1">
+      <div class="feature-text">
+        <h3>Elektronik</h3>
+        <p>Egal ob DIY oder einfach Schaltungen aus dem Internet hier findest Du was du für deine Hobby-Projekte benötigst.  Ob einfache Ansteuerung oder komplizierte Analogwertverarbeitung.
+          Ich biete dir hier die Möglichkeit einfach mal durch die einzelnen Projekte zu stöbern.
+        </p>
+      </div>
+    </section>
+
+    <section class="feature reverse">
+      <img src="./pic/Elektrotechnik.jpg" alt="Demo Bild 2">
+      <div class="feature-text">
+        <h3>Elektrotechnik</h3>
+        <p>Viel Kabel und viel Farben? Kein Problem hier findest Du alles über Grundlegende Elektrische Schaltungen bis hin zu Komplexen Automatisierungen.
+          Der blick hinein lohnt sich auf jeden fall für begeisterte.
+        </p>
+      </div>
+    </section>
+
+    <section class="feature">
+      <img src="./pic/SPS.jpg" alt="Demo Bild 3">
+      <div class="feature-text">
+        <h3>SPS - Was ist das?</h3>
+        <p>Ich zeige Dir hier wie du SPS ob von Siemens oder auch von WAGO einrichtest und wie Du sie benutzt.
+          Gezeigt wird natürlich auch, wo du diese herunterladen kannst!
+        </p>
+      </div>
+    </section>
+
+    <section class="feature reverse">
+      <img src="./pic/3D-Druck.jpeg" alt="Demo Bild 2">
+      <div class="feature-text">
+        <h3>3D-Modelle und 3D-Druck</h3>
+        <p>Was ist das? Wie fange ich am besten an und welche Software benötige ich? Auch der Drucker spielt hierbei eine wichtige Rolle!
+          Einfach mal reinschauen was es gibt. Bestimmt findest du was.
+        </p>
+      </div>
+    </section>
+
+    <section class="feature">
+      <img src="./pic/Programmieren.jpg" alt="Demo Bild 3">
+      <div class="feature-text">
+        <h3>Programierung</h3>
+        <p>Du willst eigene kleine Projete mit Mikrokontrollern erstellen, weißt aber nicht wie? Hier kann ich dir bestimmt was zeigen.
+          Welcher Mikrokontroller, Software oder welche Programiersprache? Hier wirds gezeigt. 
+        </p>
+      </div>
+    </section>
+
+    <section class="feature reverse">
+      <img src="./pic/Motor.jpg" alt="Demo Bild 2">
+      <div class="feature-text">
+        <h3>Oldtimer oder Auto</h3>
+        <p>Hier zeige ich dir alles über den Golf 2 was du wissen musst um selbst hand anlegen zu können! Auch ich hab mal angefangen.
+          Es gibt natürlich auch anleitungen zu anderen Herstellern und Autos! Einfach ein blick reinwerfen.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>
+          <a href="datennutzung.html">Datenschutzrichtlinien</a> |
+          <a href="datennutzung.html">Verwendung von Cookies</a> |
+          <a href="datennutzung.html">Nutzungsbedingungen</a> |
+          <a href="datennutzung.html">Rückerstattungen</a> |
+          <a href="datennutzung.html">Rechtliche Hinweise</a>
+        </p>
+      </div>
+      &copy; 2025 FLINT Development. Alle Rechte vorbehalten.
+    </footer>
+
+    <div id="cookie-popup">
+      <p>Diese Website verwendet Cookies, um Ihnen die bestmögliche Erfahrung beim besuch unserer Seite an zu bieten.</p>
+    
+      <a class="accordion-toggle" onclick="toggleAccordion()">
+        Cookie-Einstellungen <span id="arrow" class="arrow">▼</span>
+      </a>
+    
+      <div id="accordion" class="accordion-content">
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" checked disabled class="fixed-checkbox">
+            Technisch notwendige Cookies: erforderlich für den Betrieb der Website.
+          </label>
+          <label>
+            <input type="checkbox" id="statistik">
+            Statistik-Cookies: Diese helfen uns, die Nutzung der Seite zu analysieren.
+            und zu verbessern.
+          </label>
+          <label>
+            <input type="checkbox" id="marketing">
+            Marketing-Cookies: Ermöglicht uns ihnen personalisierte Werbung an zu zeigen.
+          </label>
+        </div>
+      </div>
+    
+      <div class="cookie-buttons">
+        <button class="accept" onclick="acceptCookies()">Akzeptieren</button>
+        <button class="decline" onclick="declineCookies()">Ablehnen</button>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
