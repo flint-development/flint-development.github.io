@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Account - FLINT Development</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="fixedHeaderNav">
+            <header>
+              <button id="theme-toggle" class="theme-button">🌙</button>
+              <h1>Willkommen bei FLINT Development</h1>
+            </header>
+          
+            <nav>
+              <a href="index.html">Start</a>
+              <a href="produkte.html">Produkte</a>
+              <a href="produkte.html">Shop</a>
+              <a href="support.html">Support</a>
+              <a href="kontakt.html">Kontakt</a>
+              <a href="account.html">Account</a>
+              <input class="searchSiteAllong" placeholder="Search..."></input>
+            </nav>
+        </div>
+
+        <main class="login-container">
+            <!-- Login-Formular -->
+            <form id="login-form" class="login-form">
+              <h2>Login</h2>
+              <label for="login-email">E-Mail-Adresse</label>
+              <input type="email" id="login-email" required />
+              <label for="login-password">Passwort</label>
+              <input type="password" id="login-password" required />
+              <button type="submit">Einloggen</button>
+              <p class="login-note">
+                Noch keinen Account? <a href="#" id="show-register">Jetzt registrieren</a>
+              </p>
+            </form>
+        
+            <!-- Registrier-Formular -->
+            <form id="register-form" class="login-form hidden">
+              <h2>Registrieren</h2>
+              <label for="reg-name">Name</label>
+              <input type="text" id="reg-name" required />
+              <label for="reg-email">E-Mail-Adresse</label>
+              <input type="email" id="reg-email" required />
+              <label for="reg-password">Passwort</label>
+              <input type="password" id="reg-password" required />
+              <label for="reg-password2">Passwort bestätigen</label>
+              <input type="password" id="reg-password2" required />
+              <button type="submit">Registrieren</button>
+              <p class="login-note">
+                Bereits registriert? <a href="#" id="show-login">Jetzt einloggen</a>
+              </p>
+            </form>
+          </main>
+
+        <footer>
+            <div class="footer-content">
+              <p>
+                <a href="datennutzung.html">Datenschutzrichtlinien</a> |
+                <a href="datennutzung.html">Verwendung von Cookies</a> |
+                <a href="datennutzung.html">Nutzungsbedingungen</a> |
+                <a href="datennutzung.html">Rückerstattungen</a> |
+                <a href="datennutzung.html">Rechtliche Hinweise</a>
+              </p>
+            </div>
+            &copy; 2025 FLINT Development. Alle Rechte vorbehalten.
+          </footer>
+
+          <div id="cookie-popup">
+            <p>Diese Website verwendet Cookies, um Ihnen die bestmögliche Erfahrung beim besuch unserer Seite an zu bieten.</p>
+          
+            <a class="accordion-toggle" onclick="toggleAccordion()">
+              Cookie-Einstellungen <span id="arrow" class="arrow">▼</span>
+            </a>
+          
+            <div id="accordion" class="accordion-content">
+              <div class="checkbox-group">
+                <label>
+                  <input type="checkbox" checked disabled class="fixed-checkbox">
+                  Technisch notwendige Cookies: erforderlich für den Betrieb der Website.
+                </label>
+                <label>
+                  <input type="checkbox" id="statistik">
+                  Statistik-Cookies: Diese helfen uns, die Nutzung der Seite zu analysieren.
+                  und zu verbessern.
+                </label>
+                <label>
+                  <input type="checkbox" id="marketing">
+                  Marketing-Cookies: Ermöglicht uns ihnen personalisierte Werbung an zu zeigen.
+                </label>
+              </div>
+            </div>
+          
+            <div class="cookie-buttons">
+              <button class="accept" onclick="acceptCookies()">Akzeptieren</button>
+              <button class="decline" onclick="declineCookies()">Ablehnen</button>
+            </div>
+          </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

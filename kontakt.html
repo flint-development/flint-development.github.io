@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kontakt – FLINT Development</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="fixedHeaderNav">
+            <header>
+              <button id="theme-toggle" class="theme-button">🌙</button>
+              <h1>Willkommen bei FLINT Development</h1>
+            </header>
+          
+            <nav>
+              <a href="index.html">Start</a>
+              <a href="produkte.html">Produkte</a>
+              <a href="produkte.html">Shop</a>
+              <a href="support.html">Support</a>
+              <a href="kontakt.html">Kontakt</a>
+              <a href="account.html">Account</a>
+              <input class="searchSiteAllong" placeholder="Search..."></input>
+            </nav>
+          </div>
+
+        <div class="content">
+            <h2>Kontaktieren Sie uns</h2>
+            <p>Haben Sie Fragen, Anregungen oder benötigen Sie persönliche Beratung? Füllen Sie das Formular aus, und wir melden uns schnellstmöglich bei Ihnen.</p>
+
+            <form action="mailto:deine-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">E-Mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Telefonnummer:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"><br><br>
+
+            <label for="message">Nachricht:</label><br>
+            <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+
+            <button type="submit" class="button">Absenden</button>
+            </form>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+              <p>
+                <a href="datennutzung.html">Datenschutzrichtlinien</a> |
+                <a href="datennutzung.html">Verwendung von Cookies</a> |
+                <a href="datennutzung.html">Nutzungsbedingungen</a> |
+                <a href="datennutzung.html">Rückerstattungen</a> |
+                <a href="datennutzung.html">Rechtliche Hinweise</a>
+              </p>
+            </div>
+            &copy; 2025 FLINT Development. Alle Rechte vorbehalten.
+        </footer>
+
+        <div id="cookie-popup">
+            <p>Diese Website verwendet Cookies, um Ihnen die bestmögliche Erfahrung beim besuch unserer Seite an zu bieten.</p>
+          
+            <a class="accordion-toggle" onclick="toggleAccordion()">
+              Cookie-Einstellungen <span id="arrow" class="arrow">▼</span>
+            </a>
+          
+            <div id="accordion" class="accordion-content">
+              <div class="checkbox-group">
+                <label>
+                  <input type="checkbox" checked disabled class="fixed-checkbox">
+                  Technisch notwendige Cookies: erforderlich für den Betrieb der Website.
+                </label>
+                <label>
+                  <input type="checkbox" id="statistik">
+                  Statistik-Cookies: Diese helfen uns, die Nutzung der Seite zu analysieren.
+                  und zu verbessern.
+                </label>
+                <label>
+                  <input type="checkbox" id="marketing">
+                  Marketing-Cookies: Ermöglicht uns ihnen personalisierte Werbung an zu zeigen.
+                </label>
+              </div>
+            </div>
+          
+            <div class="cookie-buttons">
+              <button class="accept" onclick="acceptCookies()">Akzeptieren</button>
+              <button class="decline" onclick="declineCookies()">Ablehnen</button>
+            </div>
+          </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
