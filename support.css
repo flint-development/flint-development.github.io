@@ -1,0 +1,480 @@
+@font-face {
+    font-family: 'STR';
+    src: url('./font/STR.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+:root {
+    --bg: #fef9ef;
+    --text: #333;
+    --card-bg: white;
+    --nav-bg: linear-gradient(#a2a2a2, #888);
+    --header-bg: linear-gradient(#e5e5e5, #bfbfbf);
+} 
+body {
+    font-family: 'STR', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* HEADER CSS --------------------------------------------------*/
+header {
+    background: var(--header-bg);
+    border-bottom: 1px solid #999;
+    padding: 20px 40px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+} 
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+.theme-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--text);
+}
+.fixedHeaderNav {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* sorgt dafür, dass sie über anderen Inhalten liegen */
+    background-color: #fff; /* unbedingt ein Hintergrund, damit es nicht durchsichtig wirkt */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* optional: leichter Schatten für Tiefe */
+}
+
+
+/* NAVIGATION --------------------------------------------------*/
+nav {
+    background: var(--nav-bg);
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #666;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+}
+nav a:hover {
+    background-color: #666;
+    border-radius: 5px;
+}
+nav .searchSiteAllong {
+    width: 200px !important;
+    height: 25px !important;
+    resize: none;
+    overflow: hidden;
+    padding: right;
+    font-size: 15px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 7px;
+}
+
+
+/* WILLKOMMEN --------------------------------------------------*/
+.welcome-content {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: var(--card-bg);
+    padding: 40px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+.button:hover {
+    background: linear-gradient(to bottom, #eeeeee, #bbbbbb);
+}
+
+/* PRODUKTE ----------------------------------------------------*/
+.wrapper {
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 275px);
+}
+
+.feature {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin: 60px auto;
+    max-width: 900px;
+    gap: 40px;
+    padding: 0 20px;
+}
+  
+.feature img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+  
+.feature-text {
+    max-width: 400px;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    align-items: center;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 10px;
+  }
+  
+.feature-text h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+  
+.feature-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text);
+}
+  
+.feature.reverse {
+    flex-direction: row-reverse;
+}
+
+/* FOOTER ------------------------------------------------------*/
+footer {
+    background: var(--header-bg);
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+    position: relative;
+    font-size: 12px;
+    color: #777;
+    height: 100px;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 10px;
+}
+  
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Übergangseffekt für Dark/Light Mode */
+body {
+    transition: background-color 0.3s, color 0.3s; /* Sanfter Übergang zwischen den Farben */
+}
+  
+body.dark {
+    background-color: #25343F;
+    color: #fcfcfc;
+}
+
+body.dark {
+    --bg: #a10505;
+    --text: #f0f0f0;
+    --card-bg: #2b2b2b;
+    --nav-bg: linear-gradient(#2c2c2c, #222);
+    --header-bg: linear-gradient(#383838, #272727);
+}
+
+body.dark {
+  background-color: #25343F;
+  color: #f0f0f0;
+}
+
+body.dark label, body.dark p, body.dark a, body.dark h1, body.dark h2 {
+  color: #f0f0f0;
+}
+
+body.dark input {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 1px solid #444;
+}
+
+body.dark .login-form {
+  background-color: #1c1c1c;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark .login-form button {
+  background-color: #444;
+  color: #fff;
+}
+
+body.dark .button, body.dark button {
+  background: linear-gradient(to bottom, #333333, #1a1a1a);
+  color: #c5c5c5;
+  border: 1px solid #555;
+}
+
+body.dark .button:hover, body.dark button:hover {
+  background: linear-gradient(to bottom, #444444, #222222);
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+body.dark textarea {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+}
+  
+body.dark textarea:focus {
+    border-color: #007aff;
+    background-color: #2a2a2a;
+    box-shadow: 0 0 8px rgba(0, 122, 255, 0.3);
+}
+
+/* Für Buttons */
+button, .button {
+    background-color: #2b2b2b;
+    color: #ebebeb;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Sanfte Übergänge */
+    border: 0px solid #999;
+    border-radius: 8px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+    display: inline-block;
+    margin-top: 20px;
+}
+button:hover, .button:hover {
+  background-color: #d1d1d1;
+  transform: scale(1.05); /* Leichtes Vergrößern bei Hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sanfte Schatten für den 3D-Effekt */
+}
+
+
+
+
+/* Für Links
+.link {
+  text-decoration: none;
+  color: #007aff;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+.link:hover {
+  color: #005bb5;
+  text-decoration: underline;
+}
+*/
+/* Schattierungen für Text */
+h1, h2, h3 {
+    color: #333;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Leichte Schatten für Titel */
+}
+  
+/* Animierter Effekt für Text */
+h1 {
+    animation: fadeIn 1s ease-out; /* Animation für den Text */
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+@media (max-width: 768px) {
+    .content {
+      margin: 20px;
+      padding: 20px;
+    }
+    .feature {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .feature img {
+      width: 100%;
+    }
+}
+
+/* TEXTEINGABE ANIMATION ----------------------------------------------*/
+input, textarea {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+  
+input:focus, textarea:focus {
+    border-color: #007aff;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 122, 255, 0.3); /* Fokus-Effekt */
+    transform: scale(1.05); /* Leicht vergrößern */
+}
+
+/*COCKIE POPUP ---------------------------------------------------------------------------*/
+#cookie-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    max-width: 90%;
+    background-color: #f1f1f1;
+    color: #000000;
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0.1px #0a3461;
+    z-index: 1000;
+    display: none;
+}
+
+body.dark #cookie-popup {
+    background-color: #5c5c5c;
+    color: #d1d1d1;
+}
+
+#cookie-popup.show {
+    opacity: 1;
+}
+
+#cookie-popup p {
+    margin: 0 0 20px;
+    font-size: 1rem;
+}
+
+.cookie-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cookie-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.accept {
+    background-color: #4CAF50;
+    color: white;
+}
+.accept:hover {
+    background-color: #0b7c0f;
+    box-shadow: 0 0 8px rgba(53, 123, 28, 0.555);
+}
+body.dark .accept {
+    background-color: #4CAF50;
+    color: white;
+}
+body.dark .accept:hover {
+    background-color: #0b7c0f;
+    box-shadow: 0 0 8px rgba(53, 123, 28, 0.555);
+}
+
+
+.decline {
+    background-color: #d9534f;
+    color: white;
+}
+.decline:hover {
+    background-color: #8f1d19;
+    box-shadow: 0 0 8px rgba(200, 93, 82, 0.555);
+}
+body.dark .decline {
+    background-color: #d9534f;
+    color: white;
+}
+body.dark .decline:hover {
+    background-color: #8f1d19;
+    box-shadow: 0 0 8px rgba(200, 93, 82, 0.555);
+}
+
+.accordion-toggle {
+    background: linear-gradient(to bottom, #ffffff, #cccccc);
+    border: 1px solid #999;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.dark .accordion-toggle {
+    background: linear-gradient(to bottom, #444444, #222222);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+.accordion-toggle:hover {
+    background: linear-gradient(to bottom, #eeeeee, #bbbbbb);
+}
+
+.arrow {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content.open {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+    text-align: left;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.checkbox-group {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 0.95rem;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+.checkbox-group label:not(.fixed-checkbox) {
+    border-bottom: 1px solid #ddd;
+}
+
+.fixed-checkbox {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

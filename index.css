@@ -5,7 +5,7 @@
     font-style: normal;
 }
 :root {
-    --bg: #f2f2f2;
+    --bg: #fef9ef;
     --text: #333;
     --card-bg: white;
     --nav-bg: linear-gradient(#a2a2a2, #888);
@@ -91,28 +91,26 @@ nav .searchSiteAllong {
     background-color: var(--card-bg);
     padding: 40px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
 }
 .button {
-    background: linear-gradient(to bottom, #ffffff, #cccccc);
-    border: 1px solid #999;
-    border-radius: 8px;
-    color: #333;
-    font-size: 16px;
-    padding: 10px 20px;
-    text-decoration: none;
-    text-shadow: 0 1px 0 #fff;
-    display: inline-block;
-    margin-top: 20px;
+    
 }
   
 .button:hover {
-    background: linear-gradient(to bottom, #eeeeee, #bbbbbb);
+    background: #2b2b2b;
 }
 
 /* PRODUKTE ----------------------------------------------------*/
+.wrapper {
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 275px);
+}
+
 .feature {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     margin: 60px auto;
     max-width: 900px;
@@ -130,6 +128,11 @@ nav .searchSiteAllong {
 .feature-text {
     max-width: 400px;
     background-color: var(--card-bg);
+    border-radius: 8px;
+    align-items: center;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 10px;
   }
   
 .feature-text h3 {
@@ -158,6 +161,7 @@ footer {
     position: relative;
     font-size: 12px;
     color: #777;
+    height: 100px;
 }
 
 footer a {
@@ -176,20 +180,20 @@ body {
 }
   
 body.dark {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #25343F;
+    color: #fcfcfc;
 }
 
 body.dark {
-    --bg: #1c1c1c;
+    --bg: #a10505;
     --text: #f0f0f0;
     --card-bg: #2b2b2b;
-    --nav-bg: linear-gradient(#444, #222);
-    --header-bg: linear-gradient(#333, #111);
+    --nav-bg: linear-gradient(#2c2c2c, #222);
+    --header-bg: linear-gradient(#383838, #272727);
 }
 
 body.dark {
-  background-color: #121212;
+  background-color: #25343F;
   color: #f0f0f0;
 }
 
@@ -240,23 +244,25 @@ body.dark textarea:focus {
 
 /* Für Buttons */
 button, .button {
-  background-color: #f0f0f5;
-  color: #333;
-  border: 2px solid #ccc;
-  padding: 10px 20px;*/
-  font-size: 16px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out; /* Sanfte Übergänge */
+    background-color: #2b2b2b;
+    color: #ebebeb;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Sanfte Übergänge */
+    border: 0px solid #999;
+    border-radius: 8px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+    display: inline-block;
+    margin-top: 20px;
 }
+
 button:hover, .button:hover {
-  background-color: #d1d1d1;
+  background-color: #2b2b2b;
   transform: scale(1.05); /* Leichtes Vergrößern bei Hover */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sanfte Schatten für den 3D-Effekt */
 }
-
-
-
 
 /* Für Links
 .link {
